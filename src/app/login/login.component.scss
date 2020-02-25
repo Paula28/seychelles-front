@@ -1,0 +1,60 @@
+.header {
+  width: 80vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: lightblue;
+  margin-left: 10vw;
+
+  .img-header {
+    width: 80%;
+    height: 100%;
+    background-image: url(../../../img/img3.jpeg);
+    background-position: center center;
+    background-size: cover;
+    border-bottom-left-radius: 10px;
+  }
+
+  span {
+    width: 20%;
+    font-size: 26px;
+    font-family: mainFont;
+    text-align: center;
+    color: white;
+    letter-spacing: 10px;
+  }
+  @font-face {
+    font-family: mainFont;
+    src: url(../../fonts/main/Junicode-zv1w.ttf);
+  }
+}
+.form {
+  margin-top: 1vh;
+  margin-left: 30vw;
+  width: 40vw;
+
+  .form-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .anchor {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.error-input {
+  border-color: red;
+  border-width: 3px;
+}
+.error-span {
+  margin-top: 10px;
+  color: red;
+}

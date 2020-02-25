@@ -1,0 +1,23 @@
+<div class="header">
+    <span>Seychelles Islands</span>
+    <div class="img-header"></div>
+</div>
+<div class="home-container">
+    <button (click)="logOut()" class="btn btn-danger btn-logout">Log Out</button>
+    <div class="welcome">
+        Welcome back: <span *ngIf="user">{{user.firstName}} {{user.lastName}}</span>
+    </div>
+    <div class="" *ngIf="!showError && data">
+        {{data.address}}
+        {{data.time}}
+        {{data.temperature}}
+    </div>
+    <div class="" *ngIf="showError">
+        Error! Something went wrong when fetching data
+    </div>
+    <div class="img-container" [ngClass]="{
+        'img-container-selected-1': selectedImage === 1,
+        'img-container-selected-2': selectedImage === 2,
+        'img-container-selected-3': selectedImage === 3
+    }"></div>
+</div>
